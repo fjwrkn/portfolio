@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>ポートフォリオ</title>
+</head>
+<body>
+
+<!--ヘッダー-->
+    <header>
+    <h1>Portfolio</h1>
+    <div class="headernav">
+        <nav class="navlist">
+            <ul class="nav">
+                <li class="li-nav"><a href="#prof">Profile</a></li>
+                <li class="li-nav"><a href="#works">Works</a></li>
+                <li class="li-nav"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+<!--/ヘッダー-->
+
+
+<!--メインビジュアル-->
+<div class="mv">
+<p class="mv-title">Kana's Portfolio</p>
+</div>
+<!--メインビジュアル-->
+
+<!--Profile-->
+<section class="profile section" id="prof">
+<h2>Profile</h2>
+<div class="profimg"><img src="prof.jpg"alt="カービィとわたし！"></div>
+<div class="profile-all">
+<div class="prof-like">
+<h3 class="h3prof">About</h3>
+<p class="prof-likep">
+北海道芸術デザイン専門学校
+</br>産業デザイン学科
+</br>イラストレーション専攻 卒業</p>
+<hr>
+    <h3 class="h3prof">Like</h3>
+    <ul class="ulprof-like">
+        <li>星のカービィ</li>
+        <li>オオカミ</li>
+        <li>アニメ・漫画鑑賞</li>
+        <li>習字</li>
+    </ul>
+</br>
+</div>
+<div class="prof-skil">
+<h3 class="h3prof">Skill</h3>
+<p>
+ビジネス能力検定　3級</br>
+色彩士検定　３級
+</br>Illustrator・Photoshopを使用したポスターの制作経験有</br>
+Wordを使用した文書・書類制作可能</br>
+Exeleを使用した簡易な計算・表制作が可能</p>
+</ul>
+</div>
+</div>
+</section>
+<!--Profile-->
+
+<!--works-->
+<section class="works section" id="works">
+    <h2>Works</h2>
+    <div class="nekoandhukidashi"><img src="nekochan.png" class="nekochan">
+    <div class="slashbefore"></div>
+    <p class="hukidashi">専門学生時代～現在まで<br>の作品たちです・ω・</p>
+    <div class="slashafter"></div></div>
+
+        <ul class="ul-workslist">
+            <h3 class="workslist">Illustration</h3> 
+            <div class="box"><!--アコーディオンパネル中身-->
+            <div class="flowerjpg"><!--モーダルウィンドウ入口1-->
+                <li class="li-workslist">
+                    <a href="#design-1" class="info"><img src="flower.jpg"></a>      
+                    <div class="workstitle">水彩画</div></li></div>
+            <section id="design-1" class="hide-area"><!--モーダルウィンドウ中身1-->
+                <div class="worksimg"><img src="flower.jpg"alt="" class="worksimg-1">
+                <h3 class="worksimg-h3">ダリア　水彩画</h3>
+                <p class="worksimg">授業で描いた水彩画です。<br></p></div>
+            </section>
+            <li class="kuuhaku"></li>
+            <div class="flowerjpg"><!--モーダルウィンドウ入口2-->
+                <li class="li-workslist">
+                    <a href="#design-2" class="info"><img src="dessin.jpg"></a>      
+                    <div class="workstitle">デッサン</div></li></div>
+            <section id="design-2" class="hide-area"><!--モーダルウィンドウ中身2-->
+                <div class="worksimg"><img src="dessin.jpg"alt="" class="worksimg-1">
+                <h3 class="worksimg-h3">建物　B2　デッサン</h3>
+                <p class="worksimg">授業で描いたデッサンです。</br>壁の質感にこだわり描きました。</p></div>
+            </section>
+            <li class="kuuhaku"></li>
+            <div class="flowerjpg"><!--モーダルウィンドウ入口3-->
+                <li class="li-workslist">
+                    <a href="#design-3" class="info"><img src="friend.jpg"></a>      
+                    <div class="workstitle">Present</div></li></div>
+            <section id="design-3" class="hide-area"><!--モーダルウィンドウ中身3-->
+                <div class="worksimg"><img src="friend.jpg"alt="" class="worksimg-1">
+                <h3 class="worksimg-h3">友人へのプレゼント</h3>
+                <p class="worksimg">友人へプレゼントしたイラストです。</br>掲載許可頂いております。</p></div>
+            </section>
+            </div>
+        </ul>
+    </div>
+</section>
+<!--works-->
+
+<!--contact-->
+<section class="contact section" id="contact">
+<h2>Contact</h2>
+    <div class="form">
+    <FORM>
+
+    <label for="name">Name</label><br>
+    <div class="name"><INPUT TYPE="text" placeholder="山田　花子" required></div>
+
+    <label for="email">E-mail</label>
+    <div><INPUT TYPE="email" placeholder="xxx@e-mail.com" required></div>
+        
+    <label for="massagetitle">Message</label>
+    <div class="massage">
+    <textarea name="message" placeholder="ご依頼内容をご記入ください！" cols="40" rows="11" required></textarea>
+    </div>
+     <div class="submit"><input type="submit" value="Send"></div>
+     
+    </FORM>
+</div>
+</section>
+<!--contact-->
+
+<!--フッター-->
+<footer>
+    <div class="footer-copy">&copy;Kana's Portfolio</div>
+</footer>
+<!--フッター-->
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/9-6-3/js/9-6-3.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
