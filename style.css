@@ -28,8 +28,7 @@ header{
     width: 100%; 
     height: 60px; 
     padding: 0% 3% 0% 3%; 
-    box-sizing: border-box;
-    align-items: center; 
+
 }
 h1{color:#fff;font-size: large;font-size:200%;}
 
@@ -39,7 +38,7 @@ a:link{color:#fff} a:visited{color:#fff}
 
 }
 .li-nav{
-    padding: 5% 10% 5% 10%;
+    padding: 5% 5% 5% 5%;
     margin: 2% 2% 2% 2%;
     color:#fff;
     font-size: 90%;
