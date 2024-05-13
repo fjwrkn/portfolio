@@ -23,19 +23,19 @@ header{
     background-color: black;
     display: flex;
     flex-wrap: wrap;
+    
     align-items:center;
     position: fixed; /*← fixedで固定 */
     width: 100%; 
-    height: 60px; 
+    height: 7%; 
     padding: 0% 3% 0% 3%; 
-
 }
-h1{color:#fff;font-size: large;font-size:200%;}
+h1{color:#fff;font-size:large;font-size:200%;}
 
 a:link{color:#fff} a:visited{color:#fff}
 .nav{
     display: flex;
-
+    width:auto;
 }
 .li-nav{
     padding: 5% 5% 5% 5%;
