@@ -290,6 +290,7 @@ textarea{
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
+.button{font-family:Cambria, Cochin,"Times New Roman", Times, serif;}
 .submit{
     font-family:Cambria, Cochin,"Times New Roman", Times, serif;
     display       : inline-block;
@@ -301,6 +302,24 @@ textarea{
     color         : #ffffff;
     margin-top: 5%;
 }
+
+.submit:checked + .submitclick{
+    display:block;}
+
+@keyframes submitclick {
+    0% {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
 /*コンタクト*/
 
 /*フッター*/
