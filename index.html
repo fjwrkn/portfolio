@@ -117,7 +117,7 @@ Exeleを使用した簡易な計算・表制作が可能</p>
 <section class="contact section" id="contact">
 <h2>Contact</h2>
     <div class="form">
-    <FORM>
+    <FORM id="contact-form">
 
     <label for="name">Name</label><br>
     <div class="name"><INPUT TYPE="text" placeholder="山田　花子" required></div>
@@ -147,6 +147,29 @@ Exeleを使用した簡易な計算・表制作が可能</p>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
 <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/9-6-3/js/9-6-3.js"></script>
 <script src="script.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init('psSQtgRINrrEibMF0');
+    })();
+</script>
+<script type="text/javascript">
+    window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // generate a five digit number for the contact_number variable
+            this.contact_number.value = Math.random() * 100000 | 0;
+            // these IDs from the previous steps
+            emailjs.sendForm('service_4qc8x55', 'template_8e3vk5d', this)
+                .then(function() {
+                    console.log('SUCCESS!');
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+        });
+    }
+</script>
 </body>
 
 </html>
