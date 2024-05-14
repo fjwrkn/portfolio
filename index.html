@@ -119,24 +119,25 @@ Exeleを使用した簡易な計算・表制作が可能</p>
 <section class="contact section" id="contact">
     <h2>Contact</h2>
         <div class="form">
-        <FORM id="contact-form">
+            <form id="contact-form" action="" method="post">
         <input type="hidden" name="contact_number">
         <label for="name">Name</label><br>
-        <div class="name"><INPUT TYPE="text" placeholder="山田　花子" required name="user_name"></div>
+        <div class="name"><INPUT TYPE="text" placeholder="山田　花子" required name="name"></div>
     
         <label for="email">E-mail</label>
-        <div><INPUT TYPE="email" placeholder="xxx@e-mail.com" required name="user_email"></div>
+        <div><INPUT TYPE="email" placeholder="xxx@e-mail.com" required name="email"></div>
             
         <label for="massagetitle">Message</label>
         <div class="massage">
-        <textarea name="message" placeholder="ご依頼内容をご記入ください！実際に送信することができます！" cols="40" rows="11" required></textarea>
+        <textarea name="message" placeholder="ご依頼内容をご記入ください！" cols="40" rows="11" required></textarea>
         </div>
-    <div class="button"><input type="submit" value="Send" class="submit"></div>
+
+    <input type="submit" value="Send" class="submit">
          
         </FORM>
     </div>
-    </section>
-    <!--contact-->
+</section>
+<!--contact-->
 
 <!--フッター-->
 <footer>
@@ -144,7 +145,29 @@ Exeleを使用した簡易な計算・表制作が可能</p>
 </footer>
 <!--フッター-->
 
-
+<script>
+    const myForm = document.getElementById('contact-form');
+  
+    myForm.addEventListener('submit', function(e) {
+      const dataArr = [...new FormData(this)];
+  
+      let confirmMessage = '以下の内容で送信してもよろしいですか？\n\n';
+      for (const [fieldName, fieldValue] of dataArr) {
+        if (fieldName === 'パスワード') {
+          confirmMessage += `${fieldName} : ${'*'.repeat(fieldValue.length)}\n`;
+        } else if (fieldName === 'ファイル') {
+          confirmMessage += `${fieldName} : ${fieldValue['name']}\n`;
+        } else {
+          confirmMessage += `${fieldName} : ${fieldValue}\n`;
+        }
+      }
+  
+      if (!window.confirm(confirmMessage)) {
+        e.preventDefault();
+      }
+  
+    });
+  </script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
 <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/9-6-3/js/9-6-3.js"></script>
