@@ -290,6 +290,18 @@ textarea{
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
+.confirmation{
+    font-family:Cambria, Cochin,"Times New Roman", Times, serif;
+    display       : inline-block;
+    border-radius : 10px;
+    text-align    : center;
+    cursor        : pointer;
+    padding       : 2% 5%;
+    background    : #000;
+    color         : #ffffff;
+    margin-top: 5%;
+}
+
 .button{font-family:Cambria, Cochin,"Times New Roman", Times, serif;}
 .submit{
     font-family:Cambria, Cochin,"Times New Roman", Times, serif;
