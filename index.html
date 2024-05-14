@@ -7,6 +7,8 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>ポートフォリオ</title>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
 </head>
 <body>
 
@@ -115,26 +117,26 @@ Exeleを使用した簡易な計算・表制作が可能</p>
 
 <!--contact-->
 <section class="contact section" id="contact">
-<h2>Contact</h2>
-    <div class="form">
-    <FORM id="contact-form">
-
-    <label for="name">Name</label><br>
-    <div class="name"><INPUT TYPE="text" placeholder="山田　花子" required></div>
-
-    <label for="email">E-mail</label>
-    <div><INPUT TYPE="email" placeholder="xxx@e-mail.com" required></div>
-        
-    <label for="massagetitle">Message</label>
-    <div class="massage">
-    <textarea name="message" placeholder="ご依頼内容をご記入ください！" cols="40" rows="11" required></textarea>
+    <h2>Contact</h2>
+        <div class="form">
+        <FORM id="contact-form">
+        <input type="hidden" name="contact_number">
+        <label for="name">Name</label><br>
+        <div class="name"><INPUT TYPE="text" placeholder="山田　花子" required name="user_name"></div>
+    
+        <label for="email">E-mail</label>
+        <div><INPUT TYPE="email" placeholder="xxx@e-mail.com" required name="user_email"></div>
+            
+        <label for="massagetitle">Message</label>
+        <div class="massage">
+        <textarea name="message" placeholder="ご依頼内容をご記入ください！実際に送信することができます！" cols="40" rows="11" required></textarea>
+        </div>
+    <div class="button"><input type="submit" value="Send" class="submit"></div>
+         
+        </FORM>
     </div>
-<input type="submit" value="Send" class="submit">
-     
-    </FORM>
-</div>
-</section>
-<!--contact-->
+    </section>
+    <!--contact-->
 
 <!--フッター-->
 <footer>
@@ -148,10 +150,11 @@ Exeleを使用した簡易な計算・表制作が可能</p>
 <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/9-6-3/js/9-6-3.js"></script>
 <script src="script.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script type="text/javascript">
     (function() {
         // https://dashboard.emailjs.com/admin/account
-        emailjs.init('psSQtgRINrrEibMF0');
+        emailjs.init('gTiK4XIGVT4LK0Xmq');
     })();
 </script>
 <script type="text/javascript">
