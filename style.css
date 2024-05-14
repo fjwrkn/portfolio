@@ -22,7 +22,7 @@ padding-top: 30px;
 header{
     background-color: black;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items:center;
     position: fixed; /*← fixedで固定 */
     width: 100%; 
@@ -31,11 +31,23 @@ header{
 }
 h1{color:#fff;font-size:large;font-size:200%;}
 
-a:link{color:#fff} a:visited{color:#fff}
+a:link{
+    color:#fff;
+    text-decoration: none;
+}
+a:visited{
+    color:#fff;
+    text-decoration: none;}
+.navlist{
+    display: block;
+    width: auto;
+}
 .nav{
     display: flex;
-    width:auto;
-    justify-content:space-between;
+    justify-content:flex-end;
+    flex-wrap: nowrap;
+    margin-left: 50%;
+    width: 100%;
 }
 .li-nav{
     padding: 5% 5% 5% 5%;
