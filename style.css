@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* CSSのリセット(絶対に書き換えない) */
+/* CSSのリセット */
 html,body,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ul,ol,li{
 	margin:0;
 	padding:0;
@@ -9,7 +9,7 @@ html,body,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ul,ol,li{
 	line-height:1;}
 
 html { scroll-behavior: smooth;}
-body {font-family:Cambria, Cochin,"Times New Roman", Times, serif;}
+body {font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;}
 h2{
 font-size:150%;
 font-weight: bolder;
@@ -120,6 +120,66 @@ div.profimg{text-align: center;padding-top:3%;padding-bottom: 3%;}
    text-align: center;
 }
 
+a.readmore-a{
+    font-size: 110%;
+}
+
+.read{
+    position: relative;/*+マークの位置基準とするためrelative指定*/
+    cursor: pointer;
+    transition: all .5s ease;
+    color: #000;
+}
+
+.readp{
+    padding: 3% 3% 3% 50px;
+}
+
+.readmore{
+    display: none;
+    padding-bottom: 5%;
+}
+
+.read:hover{
+    color: #777;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;}
+
+.readmore2{
+font-weight: 500;
+font-size: 105%;
+margin: 20px 0 20px 0;
+}
+
+/*アイコンの＋と×*/
+.read::before,
+.read::after{
+    position: absolute;
+    content:'';
+    width: 15px;
+    height: 1px;
+    background-color: #333;
+    
+}
+.read::before{
+    top:48%;
+    left: 10px;
+    transform: rotate(45deg)
+    
+}
+.read::after{    
+    top:48%;
+    left: 20px;
+    transform: rotate(-45deg);}
+
+/*　closeというクラスがついたら形状変化　*/
+.read.close::before{ transform: rotate(-45deg);}
+.read.close::after{transform: rotate(45deg);}
+
+
+
 /*プロフィール*/
 
 
@@ -212,6 +272,7 @@ div.profimg{text-align: center;padding-top:3%;padding-bottom: 3%;}
     align-items: center;
     cursor: pointer;
     transition: all .5s ease;
+    position: relative;/*+マークの位置基準とするためrelative指定*/
 }
 
 /*アコーディオンで現れるエリア*/
@@ -294,13 +355,9 @@ div.profimg{text-align: center;padding-top:3%;padding-bottom: 3%;}
     left: 15px;
     transform: rotate(90deg);}
 
-  /*　closeというクラスがついたら形状変化　*/
-.workslist.close::before{
-    transform: rotate(45deg);
-  }
-.workslist.close::after{
-    transform: rotate(-45deg);
-  }
+/*　closeというクラスがついたら形状変化　*/
+.workslist.close::before{ transform: rotate(45deg);}
+.workslist.close::after{transform: rotate(-45deg);}
 
 /*works*/
 
