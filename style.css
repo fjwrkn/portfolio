@@ -17,6 +17,10 @@ text-align: center;
 padding-bottom: 20px;
 padding-top: 30px;
 }
+p{
+    font-size: 90%;
+    line-height: 180%;
+}
 
 /*ヘッダー*/
 header{
@@ -93,15 +97,17 @@ a:visited{
 */
 @media screen and(min-width:768px){
 }
+
+.profile-all{}
+
 .prof-skil,.prof-like{
     box-shadow: 0px 0px 5px 0px gray;
-    margin: 10% 10% 10% 10%;
+    margin: 10% 5% 10% 5%;
     padding: 20px 20px 20px 20px;
     line-height: 150%;
     flex: 1;
+    max-width: 900px;
 }
-
-p{line-height: 150%;}
 
 .prof-likep{padding-bottom: 5%;}
 
@@ -125,7 +131,7 @@ a.readmore-a{
 }
 
 .read{
-    position: relative;/*+マークの位置基準とするためrelative指定*/
+    position: relative;/*マークの位置基準とするためrelative指定*/
     cursor: pointer;
     transition: all .5s ease;
     color: #000;
@@ -133,11 +139,15 @@ a.readmore-a{
 
 .readp{
     padding: 3% 3% 3% 50px;
+    margin: 3% 3% 3% 3%;
+    color: #000;
+    font-size: 100%;
+    letter-spacing : 0.1em;
 }
 
 .readmore{
     display: none;
-    padding-bottom: 5%;
+    padding: 0 5% 5% 5%;
 }
 
 .read:hover{
@@ -153,25 +163,25 @@ font-size: 105%;
 margin: 20px 0 20px 0;
 }
 
-/*アイコンの＋と×*/
+/*▽のアイコン*/
 .read::before,
 .read::after{
     position: absolute;
     content:'';
-    width: 15px;
+    width: 8px;
     height: 1px;
     background-color: #333;
     
 }
 .read::before{
-    top:48%;
+    top:50%;
     left: 10px;
     transform: rotate(45deg)
     
 }
 .read::after{    
-    top:48%;
-    left: 20px;
+    top:50%;
+    left: 15px;
     transform: rotate(-45deg);}
 
 /*　closeというクラスがついたら形状変化　*/
