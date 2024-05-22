@@ -21,6 +21,11 @@ p{
     font-size: 90%;
     line-height: 180%;
 }
+.ulprof-like{
+    font-size: 90%;
+    line-height: 180%;
+}
+
 
 /*ヘッダー*/
 header{
@@ -36,11 +41,11 @@ header{
 }
 h1{color:#fff;font-size:large;font-size:200%;}
 
-a:link{
+.header-a:link{
     color:#fff;
     text-decoration: none;
 }
-a:visited{
+.header-a:visited{
     color:#fff;
     text-decoration: none;}
 .navlist{
@@ -95,10 +100,7 @@ a:visited{
 /*
 .profile-all{display: flex;}
 */
-@media screen and(min-width:768px){
-}
 
-.profile-all{}
 
 .prof-skil,.prof-like{
     box-shadow: 0px 0px 5px 0px gray;
@@ -135,7 +137,16 @@ a.readmore-a{
     cursor: pointer;
     transition: all .5s ease;
     color: #000;
+    padding: 3% 3% 3% 40px;
+    font-size: 100%;
+    letter-spacing : 0.1em;
 }
+.read:link{
+    color:#000;
+    text-decoration: none;}
+.read:visited{
+        color:#000;
+        text-decoration: none;}
 
 .readp{
     padding: 3% 3% 3% 50px;
@@ -148,9 +159,10 @@ a.readmore-a{
 .readmore{
     display: none;
     padding: 0 5% 5% 5%;
+    color: #000;
 }
 
-.read:hover{
+.readp:hover{
     color: #777;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -164,8 +176,8 @@ margin: 20px 0 20px 0;
 }
 
 /*▽のアイコン*/
-.read::before,
-.read::after{
+.readp::before,
+.readp::after{
     position: absolute;
     content:'';
     width: 8px;
@@ -173,20 +185,20 @@ margin: 20px 0 20px 0;
     background-color: #333;
     
 }
-.read::before{
+.readp::before{
     top:50%;
-    left: 10px;
+    left:10px;
     transform: rotate(45deg)
     
 }
-.read::after{    
+.readp::after{    
     top:50%;
-    left: 15px;
+    left:15px;
     transform: rotate(-45deg);}
 
 /*　closeというクラスがついたら形状変化　*/
-.read.close::before{ transform: rotate(-45deg);}
-.read.close::after{transform: rotate(45deg);}
+.readp.close::before{ transform: rotate(-45deg);}
+.readp.close::after{transform: rotate(45deg);}
 
 
 
@@ -349,25 +361,25 @@ margin: 20px 0 20px 0;
 .workslist::after{
     position: absolute;
     content:'';
-    width: 15px;
-    height: 2px;
+    width: 8px;
+    height: 1px;
     background-color: #333;
     
 }
 .workslist::before{
-    top:48%;
+    top:50%;
     left: 15px;
-    transform: rotate(0deg);
+    transform: rotate(45deg)
     
 }
 .workslist::after{    
-    top:48%;
-    left: 15px;
-    transform: rotate(90deg);}
+    top:50%;
+    left: 20px;
+    transform: rotate(-45deg);}
 
 /*　closeというクラスがついたら形状変化　*/
-.workslist.close::before{ transform: rotate(45deg);}
-.workslist.close::after{transform: rotate(-45deg);}
+.workslist.close::before{ transform: rotate(-45deg);}
+.workslist.close::after{transform: rotate(45deg);}
 
 /*works*/
 
