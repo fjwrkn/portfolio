@@ -9,9 +9,10 @@ html,body,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ul,ol,li{
 	line-height:1;}
 
 html { scroll-behavior: smooth;}
-body {font-family:font-family:a-otf-ryumin-pr6n, serif;}
+body {font-family:a-otf-ryumin-pr6n, serif;}
 h2{
 font-size:150%;
+font-family: "Sofia", cursive;
 font-weight: bolder;
 text-align: center;
 padding-bottom: 3em;
@@ -44,7 +45,8 @@ header{
     padding: 0% 3% 0% 3%; 
     z-index: 50;
 }
-h1{color:#fff;font-size:large;font-size:200%;}
+h1{color:#fff;font-size:large;font-size:200%;
+    font-family: "Sofia", cursive;}
 
 .header-a:link{
     color:#fff;
