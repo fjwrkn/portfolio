@@ -9,7 +9,7 @@ html,body,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ul,ol,li{
 	line-height:1;}
 
 html { scroll-behavior: smooth;}
-body {font-family:a-otf-ryumin-pr6n, serif;}
+body {font-family: "Noto Serif JP", serif;}
 h2{
 font-size:150%;
 font-family: "Sofia", cursive;
@@ -21,7 +21,8 @@ padding-top: 3em;
 p{
     font-size: 90%;
     line-height: 180%;
-    justify-content: end;
+    font-family: "Noto Serif JP", serif;
+    letter-spacing: 0.12em;
 }
 .ulprof-like{
     font-size: 90%;
