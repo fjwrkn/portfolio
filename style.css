@@ -12,17 +12,18 @@ html { scroll-behavior: smooth;}
 body {font-family: "Noto Serif JP", serif;}
 h2{
 font-size:150%;
-font-family: "Sofia", cursive;
+font-family: "Fredericka the Great", serif;
 font-weight: bolder;
 text-align: center;
 padding-bottom: 3em;
 padding-top: 3em;
+letter-spacing: 0.1em;
 }
 p{
     font-size: 90%;
     line-height: 180%;
     font-family: "Noto Serif JP", serif;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.1em;
 }
 .ulprof-like{
     font-size: 90%;
@@ -47,7 +48,7 @@ header{
     z-index: 50;
 }
 h1{color:#fff;font-size:large;font-size:200%;
-    font-family: "Sofia", cursive;}
+    font-family: "Fredericka the Great", serif;}
 
 .header-a:link{
     color:#fff;
@@ -79,19 +80,20 @@ h1{color:#fff;font-size:large;font-size:200%;
 /*メインビジュアル*/
 .mv{
     position: relative;
-
+    overflow: hidden;
+    z-index: 10;
 }
 .mv-title{
+    white-space: nowrap;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    margin:0;
-    padding:0;
-    font-size:200%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    top:50%;
+    left: 51%;
+    font-size: 11vw;
     color: #fff;
+    font-family: "Fredericka the Great", serif;
+    letter-spacing: 0.1em;
 }
 
 .mv-photo{
@@ -100,7 +102,7 @@ h1{color:#fff;font-size:large;font-size:200%;
     object-fit: cover;
     z-index: 5;
     margin-top: 5%;
-    max-height: 500px;
+    max-height: 700px;
 }
 
 /*メインビジュアル*/
@@ -331,7 +333,8 @@ margin: 20px 0 20px 0;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    font-size:130%;
+    font-size:100%;
+    font-weight: 500;
     color: #000;
 }
 
