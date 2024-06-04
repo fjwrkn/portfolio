@@ -24,6 +24,11 @@ p{
     line-height: 180%;
     font-family: "Noto Serif JP", serif;
     letter-spacing: 0.1em;
+    padding-bottom: 3vh;
+}
+h4{
+    font-weight: 400;
+    padding-bottom: 2vh;
 }
 .ulprof-like{
     font-size: 90%;
@@ -118,7 +123,7 @@ h1{color:#fff;font-size:large;font-size:200%;
 
 .prof-skil,.prof-like{
     box-shadow: 0px 0px 5px 0px gray;
-    padding: 20px 20px 20px 20px;
+    padding: 5% 5% 5% 5%;
     line-height: 150%;
     flex: 1;
     position: relative;
@@ -132,7 +137,7 @@ h1{color:#fff;font-size:large;font-size:200%;
     margin-top: 10%;
 }
 
-.prof-likep{padding-bottom: 5%;}
+
 
 .h3prof{text-align: center;font-weight:bolder;padding-bottom: 10%;padding-top: 3%;}
 
