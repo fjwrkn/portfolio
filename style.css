@@ -163,7 +163,7 @@ a.readmore-a{
     cursor: pointer;
     transition: all .5s ease;
     color: #000;
-    padding: 3% 3% 3% 40px;
+
     font-size: 100%;
     letter-spacing : 0.1em;
 }
